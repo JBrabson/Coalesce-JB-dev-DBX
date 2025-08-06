@@ -4,4 +4,5 @@ name: Corrupt FS ID 2
 steps:
   - 7d455a02-90b9-4fb2-aa6a-47cb056ab8be
   - corrupt-id-stg-region
+  - foo
 type: Subgraph
