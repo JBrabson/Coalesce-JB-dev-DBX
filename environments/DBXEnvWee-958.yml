@@ -1,0 +1,11 @@
+fileVersion: 1
+id: "958"
+mappingDefinitions:
+  A:
+    database: jenn_dev
+    schema: jenn_jenn_only
+  SRC:
+    database: coalesce
+    schema: sample_data
+name: DBX Env Wee
+type: Environment
