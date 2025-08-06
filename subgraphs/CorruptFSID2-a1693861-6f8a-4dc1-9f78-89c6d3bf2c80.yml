@@ -2,6 +2,6 @@ fileVersion: 1
 id: a1693861-6f8a-4dc1-9f78-89c6d3bf2c80
 name: Corrupt FS ID 2
 steps:
-  - 5cfbf263-c24c-4042-a966-8fddc651bd11
   - 7d455a02-90b9-4fb2-aa6a-47cb056ab8be
+  - corrupt-id-stg-region
 type: Subgraph
