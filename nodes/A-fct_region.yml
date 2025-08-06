@@ -1,0 +1,122 @@
+fileVersion: 1
+id: 889a947c-42cd-4a68-9370-0a70568a9108
+name: fct_region
+operation:
+  config:
+    groupByAll: false
+    insertStrategy: UNION ALL
+    orderby: false
+    orderbycolumn:
+      items:
+        - {}
+    postSQL: ""
+    preSQL: ""
+    selectDistinct: false
+    testsEnabled: false
+    truncateBefore: false
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: A
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: adc485da-9b12-43c8-b844-effe3a55fe9c
+          stepCounter: 889a947c-42cd-4a68-9370-0a70568a9108
+        config: {}
+        dataType: LONG
+        description: ""
+        name: r_regionkey
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 1cb2d832-ff1c-4c01-9d48-b2835b26b3cc
+                stepCounter: 5cfbf263-c24c-4042-a966-8fddc651bd11
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9bcaf239-acf5-44fd-9227-ed38b2052e7c
+          stepCounter: 889a947c-42cd-4a68-9370-0a70568a9108
+        config: {}
+        dataType: STRING
+        description: ""
+        name: r_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 639d9f14-e1d9-4d6f-9384-89c08ac31af6
+                stepCounter: 5cfbf263-c24c-4042-a966-8fddc651bd11
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5fd9481d-43e7-4374-bc10-41b8360cee90
+          stepCounter: 889a947c-42cd-4a68-9370-0a70568a9108
+        config: {}
+        dataType: STRING
+        description: ""
+        name: r_comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: edcf4677-701c-4923-856c-081bc95ecad8
+                stepCounter: 5cfbf263-c24c-4042-a966-8fddc651bd11
+            transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: c660caa1-c0aa-44a7-ae0f-a758c8be9138
+          stepCounter: 889a947c-42cd-4a68-9370-0a70568a9108
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemCreateDate: true
+        name: system_create_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 70acf282-5b55-4a15-9e64-23ffc93de63b
+          stepCounter: 889a947c-42cd-4a68-9370-0a70568a9108
+        config: {}
+        dataType: TIMESTAMP
+        defaultValue: ""
+        description: ""
+        isSystemUpdateDate: true
+        name: system_update_date
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: CAST(CURRENT_TIMESTAMP AS TIMESTAMP)
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          stg_region: 5cfbf263-c24c-4042-a966-8fddc651bd11
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: A
+            nodeName: stg_region
+        join:
+          joinCondition: FROM {{ ref('A', 'stg_region') }} `stg_region`
+        name: fct_region
+        noLinkRefs: []
+  name: fct_region
+  overrideSQL: false
+  schema: ""
+  sqlType: Fact
+  type: sql
+  version: 1
+type: Node

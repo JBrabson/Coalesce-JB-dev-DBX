@@ -2,6 +2,4 @@ defaultStorageMapping: A
 fileVersion: 1
 locations:
   - A
-  - B
   - SRC
-  - TARGET
