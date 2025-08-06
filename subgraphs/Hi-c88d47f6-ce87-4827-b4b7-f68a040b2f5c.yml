@@ -3,7 +3,6 @@ id: c88d47f6-ce87-4827-b4b7-f68a040b2f5c
 name: Hi
 steps:
   - 17726929-dc68-4f9a-baa8-32279f5236b6
-  - 214e39cb-a9c3-4e00-98c3-820186b980b5
   - 2656314b-f425-4f32-9f54-fdf2f0e0e4e8
   - 295e5b4e-1263-4da7-9f1d-8f85a7a8d1e4
   - 2ee4a6f9-1ec5-4316-bc30-1b6f41d75a29
@@ -22,4 +21,5 @@ steps:
   - boo
   - e16b85a6-d363-4153-8466-abc53ea43bef
   - feca0dfa-8ecb-4a7a-b086-af5976519db4
+  - stgorders
 type: Subgraph
