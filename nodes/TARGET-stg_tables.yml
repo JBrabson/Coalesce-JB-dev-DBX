@@ -1,0 +1,250 @@
+fileVersion: 1
+id: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+name: stg_tables
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: de823193-15cf-4997-9748-866a4259c5c7
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Catalog that contains the relation.
+        name: table_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ed0269aa-80c0-47d3-ad50-bd7974c5c3e2
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: e5fae70e-2e53-4575-ad69-0a5f415f38c3
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Schema that contains the relation.
+        name: table_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 498fae4a-27c5-4ccb-8734-fff0c4bc6242
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d4d0c7f2-17ec-43f8-a516-3af5f84bc500
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Name of the relation.
+        name: table_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: d73e51f4-eb34-4c7d-b776-c683b6912906
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ced00559-c950-4107-b5db-0fe121db9fd8
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: One of 'BASE TABLE', 'VIEW'.
+        name: table_type
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8acb4e17-d2ce-41ff-830e-441e8c08c044
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 46f72a43-9497-4d12-bd09-dce95a760e16
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: "'YES' if the relation can be inserted into, 'NO' otherwise."
+        name: is_insertable_into
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 5da2b10a-173a-427f-9653-132b73b5b087
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a1dd2a8f-b1a9-4047-85ef-6276833d658c
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Always 'PRESERVE'. Reserved for future use.
+        name: commit_action
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 471a1eb8-a7c0-44c9-886f-0d83414fdda8
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: f24b9061-bd47-48d6-9446-8e904a217d4b
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: User or group (principal) currently owning the relation.
+        name: table_owner
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: da2e3e33-24d4-467b-9c53-4f9200a3ce8d
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: adb879b8-66b4-4130-8dd4-d5586442eeee
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: An optional comment that describes the relation.
+        name: comment
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 90b8261a-e13a-4c50-b803-99b4abd0b7c4
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ed86472a-eb9b-498c-af4f-f2f52d2fdb8e
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: TIMESTAMP
+        description: Timestamp when the relation was created.
+        name: created
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: c50a2e0d-725f-41ba-8f4f-097e9dedf154
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3c860578-6b9c-4248-ab93-a5cd40403a89
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Principal which created the relation.
+        name: created_by
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e9460ec6-74cb-4fe1-870a-1cfecb89ae1f
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 51b514d5-da89-4ce8-86a1-c4bbd406e856
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: TIMESTAMP
+        description: Timestamp when the relation definition was last altered in any way.
+        name: last_altered
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e790364e-6a56-496c-aea7-2bc694fbfb37
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 24027c18-dacd-498d-97ff-4ead1e8a44f7
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Principal which last altered the relation.
+        name: last_altered_by
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 980b80d1-1f3e-475c-8359-a2276336d147
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 65e70b18-5cc0-4797-9f18-b3f01935e4d6
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Format of the data source such as PARQUET, or CSV.
+        name: data_source_format
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a6fc1b18-b145-4ece-acce-767b649f8a8c
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9731d076-0b2a-4879-8e43-f47f24f2ac84
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: Path to the storage of an external table, NULL otherwise.
+        name: storage_sub_directory
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 53848782-0732-4226-a74a-6605882866af
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 28774e89-a3f3-4bbf-81ce-5752ee79a49c
+          stepCounter: c0dbc6c5-228b-480f-8946-7f0a330bf9b9
+        config: {}
+        dataType: STRING
+        description: ""
+        name: storage_path
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 00219289-477f-4810-9e8f-50740e8bb660
+                stepCounter: 25625f67-bdd8-4353-8f99-29c2007dd89c
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          tables: 25625f67-bdd8-4353-8f99-29c2007dd89c
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: tables
+        join:
+          joinCondition: FROM {{ ref('SRC', 'tables') }} `tables`
+        name: stg_tables
+        noLinkRefs: []
+  name: stg_tables
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

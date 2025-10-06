@@ -1,0 +1,169 @@
+fileVersion: 1
+id: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+name: key_column_usage
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 04f0dfe6-ed98-4cf0-9abd-244d0e4824ca
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Catalog containing the constraint.
+        name: constraint_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ba974077-61be-4063-9a82-9fd3db1e8e18
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Schema containing the constraint.
+        name: constraint_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 40fe19b5-2c86-4f12-b05c-4a93400fffac
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Name of the constraint.
+        name: constraint_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 52aabee4-807a-4e27-a871-b3466780cbff
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Catalog containing the table.
+        name: table_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9ddddd3-6289-403d-828f-9b7a46225ad3
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Schema containing the table.
+        name: table_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 616ac0cf-48be-4997-815f-c364aafaacfe
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Name of the table in which the constraint is defined.
+        name: table_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 71d056de-8fdd-400e-9b65-1c27e7e1a172
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Name of the column.
+        name: column_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: df18e96f-0867-4154-b108-221d53d577d7
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: Position (1-based) of the column in the key.
+        name: ordinal_position
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 72b50fcf-3821-4e88-8e2f-8d6f0f26dd99
+          stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        config: {}
+        dataType: INT
+        defaultValue: ""
+        description: For foreign key, position (1-based) of the column in parent unique or primary key constraint, NULL otherwise.
+        name: position_in_unique_constraint
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: key_column_usage
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

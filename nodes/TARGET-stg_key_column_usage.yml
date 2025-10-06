@@ -1,0 +1,166 @@
+fileVersion: 1
+id: 33c59101-3021-49b6-ae24-70cba82d5c63
+name: stg_key_column_usage
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ec6608b2-f3ff-4e04-ab7d-54ba9f7b3410
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Catalog containing the constraint.
+        name: constraint_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 04f0dfe6-ed98-4cf0-9abd-244d0e4824ca
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 64f62fb9-1cf1-4f43-ab52-b69293469132
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Schema containing the constraint.
+        name: constraint_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: ba974077-61be-4063-9a82-9fd3db1e8e18
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0951eac6-859f-49e1-8ae7-8033dca65df3
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Name of the constraint.
+        name: constraint_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 40fe19b5-2c86-4f12-b05c-4a93400fffac
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5307ff8e-06cb-4332-9ca7-c8d0e1cc7501
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Catalog containing the table.
+        name: table_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 52aabee4-807a-4e27-a871-b3466780cbff
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: bdb053a8-056b-4de9-a312-f8a66148eafc
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Schema containing the table.
+        name: table_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: a9ddddd3-6289-403d-828f-9b7a46225ad3
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: d2d2b499-f2ea-43a3-a9d4-d48f52710f58
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Name of the table in which the constraint is defined.
+        name: table_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 616ac0cf-48be-4997-815f-c364aafaacfe
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: ea9e119c-11c3-4a17-b914-a0eb7f6d4cdb
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: STRING
+        description: Name of the column.
+        name: column_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 71d056de-8fdd-400e-9b65-1c27e7e1a172
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 4bbcc023-9ddc-4c17-a025-6cb1611571db
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: INT
+        description: Position (1-based) of the column in the key.
+        name: ordinal_position
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: df18e96f-0867-4154-b108-221d53d577d7
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 60806173-1aa0-4582-9043-ad8c45c34c89
+          stepCounter: 33c59101-3021-49b6-ae24-70cba82d5c63
+        config: {}
+        dataType: INT
+        description: For foreign key, position (1-based) of the column in parent unique or primary key constraint, NULL otherwise.
+        name: position_in_unique_constraint
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 72b50fcf-3821-4e88-8e2f-8d6f0f26dd99
+                stepCounter: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          key_column_usage: f5f10b1f-e4f4-47e0-89b7-b58e5fe77b75
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: key_column_usage
+        join:
+          joinCondition: FROM {{ ref('SRC', 'key_column_usage') }} `key_column_usage`
+        name: stg_key_column_usage
+        noLinkRefs: []
+  name: stg_key_column_usage
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node

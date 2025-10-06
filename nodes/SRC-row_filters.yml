@@ -1,0 +1,101 @@
+fileVersion: 1
+id: 4737e1c1-f6c1-4947-b4c7-b86238ffe8d8
+name: row_filters
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f071e11f-4b2a-41f9-b81a-06dc3bd5f1d4
+          stepCounter: 4737e1c1-f6c1-4947-b4c7-b86238ffe8d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: table_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9474819-96b9-4890-8c2c-f2a33f9274cd
+          stepCounter: 4737e1c1-f6c1-4947-b4c7-b86238ffe8d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: table_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: cdffe9c0-debc-4a66-891c-aa6b16f6be8d
+          stepCounter: 4737e1c1-f6c1-4947-b4c7-b86238ffe8d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: table_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e0ae7bf1-f5c9-4800-a96c-c92c01f47b3c
+          stepCounter: 4737e1c1-f6c1-4947-b4c7-b86238ffe8d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: filter_name
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 5ff3efa0-a1f9-45ae-bfb8-991aa285e1f3
+          stepCounter: 4737e1c1-f6c1-4947-b4c7-b86238ffe8d8
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: target_columns
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: row_filters
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

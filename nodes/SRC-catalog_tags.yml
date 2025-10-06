@@ -1,0 +1,67 @@
+fileVersion: 1
+id: dc8d6780-d99e-4bed-8f52-ef1624209f9d
+name: catalog_tags
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: f4bee173-60a4-463b-8c32-2f3b0ac38325
+          stepCounter: dc8d6780-d99e-4bed-8f52-ef1624209f9d
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: catalog_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: ecb75fb5-39c4-42a9-ba98-ca190cf0432b
+          stepCounter: dc8d6780-d99e-4bed-8f52-ef1624209f9d
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: tag_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a31fb738-83c9-4a44-8fc8-6eed970cbacd
+          stepCounter: dc8d6780-d99e-4bed-8f52-ef1624209f9d
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: tag_value
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: catalog_tags
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

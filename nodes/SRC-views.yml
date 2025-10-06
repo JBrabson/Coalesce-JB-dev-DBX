@@ -1,0 +1,169 @@
+fileVersion: 1
+id: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+name: views
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: a9ebb3df-390d-4aef-b839-b4c3ea150b22
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Catalog containing the view.
+        name: table_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 22c8cd19-8b63-45fb-b4d6-5d1658236021
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Schema containing the view.
+        name: table_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: aaf105c2-e42a-4911-8058-0a434a0154f3
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Name of the relation.
+        name: table_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 2d5c17a3-4121-448b-b555-84fb89cdc47c
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The view text if the user owns the view, NULL otherwise.
+        name: view_definition
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 81bc6194-da7b-4d91-931b-605a09d741ee
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Always 'NONE'. Reserved for future use.
+        name: check_option
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: eeca5653-96ff-4412-ad9b-d7828b71435a
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Always NO. Reserved for future use
+        name: is_updatable
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 90ff45dc-e6fa-4a84-a3a3-28b8bfdfb27a
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Always NO. Reserved for future use.
+        name: is_insertable_into
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: d73d1f40-ba31-44c8-b919-0c555ba12a4b
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Always NULL. Reserved for future use.
+        name: sql_path
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 6ad3d05f-af0a-4e8c-9cb6-af939f454e93
+          stepCounter: 307777c2-693f-46c3-8b27-35fe7fe3ee41
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: ""
+        name: is_materialized
+        nullable: true
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: views
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

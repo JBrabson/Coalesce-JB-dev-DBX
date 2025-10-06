@@ -1,0 +1,118 @@
+fileVersion: 1
+id: d50ea425-e665-453c-97d3-5487c85bfdbd
+name: constraint_table_usage
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: dbabeb54-d57e-4b05-8963-c0e75d780b66
+          stepCounter: d50ea425-e665-453c-97d3-5487c85bfdbd
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Catalog containing the relation.
+        name: table_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3d14852b-a42a-4366-8abd-3db73027fa46
+          stepCounter: d50ea425-e665-453c-97d3-5487c85bfdbd
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Schema containing the relation.
+        name: table_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 364eae61-42d7-41a3-9e52-d387b5040dcb
+          stepCounter: d50ea425-e665-453c-97d3-5487c85bfdbd
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Name of the relation.
+        name: table_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e6dd620e-273c-4cd1-a546-4f95f824f8e5
+          stepCounter: d50ea425-e665-453c-97d3-5487c85bfdbd
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Catalog containing the constraint.
+        name: constraint_catalog
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 06b13250-d384-4fb3-9406-e8c74921c94c
+          stepCounter: d50ea425-e665-453c-97d3-5487c85bfdbd
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Schema containing the constraint.
+        name: constraint_schema
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9a72d96e-011b-4cac-89cd-c31009795f4a
+          stepCounter: d50ea425-e665-453c-97d3-5487c85bfdbd
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Name of the constraint.
+        name: constraint_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: constraint_table_usage
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node

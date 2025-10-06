@@ -1,0 +1,135 @@
+fileVersion: 1
+id: a80fc798-d632-450a-9203-13f9160461a0
+name: schema_privileges
+operation:
+  database: ""
+  deployEnabled: true
+  description: ""
+  locationName: SRC
+  metadata:
+    columns:
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8244b4ab-b5e7-4db1-b02b-a8db3978f6d3
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Principal that granted the privilege.
+        name: grantor
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 92d8d88b-877b-44c2-8d7f-f142de60e498
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Principal to which the privilege is granted.
+        name: grantee
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 17e7610c-7676-4a76-b59a-56ee40bc45d2
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Catalog of schema on which the privilege is granted.
+        name: catalog_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: e1a162cf-62be-4d12-b158-71ad3ec13cc3
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Schema on which the privilege is granted.
+        name: schema_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 9849699a-b0b7-49a4-9b99-9a7a2df9b605
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Privilege being granted.
+        name: privilege_type
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 3f3cf528-bdcc-4827-931f-bfbd197bcfd2
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: Always NO. Reserved for future use.
+        name: is_grantable
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+      - acceptedValues:
+          strictMatch: true
+          values: []
+        appliedColumnTests: {}
+        columnReference:
+          columnCounter: 0b13d91b-2083-4e89-b3ec-412eb7feffad
+          stepCounter: a80fc798-d632-450a-9203-13f9160461a0
+        config: {}
+        dataType: STRING
+        defaultValue: ""
+        description: The ancestor relation that the privilege is inherited from.
+        name: inherited_from
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences: []
+            transform: ""
+        transform: ""
+  name: schema_privileges
+  schema: ""
+  sqlType: Source
+  type: sourceInput
+  version: 1
+type: Node
