@@ -30,7 +30,7 @@ operation:
           - columnReferences:
               - columnCounter: 8439a66c-dd0f-40e1-96ed-1bacee23e23b
                 stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
-            transform: ""
+            transform: UPPER(`catalog_privileges`.`grantor`)
       - appliedColumnTests: {}
         columnReference:
           columnCounter: a7e2d0ba-6e8c-48c9-a5f5-d3d99106e0c2
