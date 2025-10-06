@@ -1,6 +1,6 @@
 excludeSelector: ""
 fileVersion: 1
 id: "137"
-includeSelector: "{ location: TARGET name: stg_tables } OR { location: SRC name: tables }"
+includeSelector: "{ location: TARGET name: stg_tables } OR { location: SRC name: tables } OR { location: TARGET name: stg_catalog_privileges }"
 name: Tables
 type: Job
