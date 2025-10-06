@@ -1,0 +1,124 @@
+fileVersion: 1
+id: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+name: stg_catalog_privileges
+operation:
+  config:
+    insertStrategy: INSERT
+    postSQL: ""
+    preSQL: ""
+    testsEnabled: true
+    truncateBefore: true
+  database: ""
+  deployEnabled: true
+  description: ""
+  isMultisource: false
+  locationName: TARGET
+  materializationType: table
+  metadata:
+    appliedNodeTests: []
+    columns:
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 79d443d2-4840-4e1b-b395-c668172e2558
+          stepCounter: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+        config: {}
+        dataType: STRING
+        description: Principal that granted the privilege.
+        name: grantor
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 8439a66c-dd0f-40e1-96ed-1bacee23e23b
+                stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: a7e2d0ba-6e8c-48c9-a5f5-d3d99106e0c2
+          stepCounter: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+        config: {}
+        dataType: STRING
+        description: Principal to which the privilege is granted.
+        name: grantee
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 720c3c0f-fa8d-486b-9782-b47f15e6ebe8
+                stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: c9a1b176-52e3-4da6-a109-de17766d5791
+          stepCounter: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+        config: {}
+        dataType: STRING
+        description: Catalog on which the privilege is granted.
+        name: catalog_name
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 4321ecc7-28fd-4f0c-9473-aeaac9cee78d
+                stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 8a7025d3-cb45-46e4-ad6b-16b26a5e7e35
+          stepCounter: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+        config: {}
+        dataType: STRING
+        description: Privilege being granted.
+        name: privilege_type
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: e8237e9d-8d0f-492e-a713-a32a13f6993e
+                stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: 09e2dbe9-a741-4b01-9f2f-cb30e350f4cb
+          stepCounter: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+        config: {}
+        dataType: STRING
+        description: Always NO. Reserved for future use.
+        name: is_grantable
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: de80adad-eeff-4a46-b2cc-9dcf88d74e47
+                stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+            transform: ""
+      - appliedColumnTests: {}
+        columnReference:
+          columnCounter: b9feff8b-c533-44bc-b733-f90eb654e847
+          stepCounter: f47660e5-745f-40aa-b3ee-b3473d0e42ee
+        config: {}
+        dataType: STRING
+        description: The ancestor relation that the privilege is inherited from.
+        name: inherited_from
+        nullable: false
+        sourceColumnReferences:
+          - columnReferences:
+              - columnCounter: 63857bb1-9fa6-4199-971c-133e55b5bc58
+                stepCounter: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+            transform: ""
+    cteString: ""
+    enabledColumnTestIDs: []
+    sourceMapping:
+      - aliases:
+          catalog_privileges: 0e45007a-f940-4dd4-aebb-08f2c5dc137e
+        customSQL:
+          customSQL: ""
+        dependencies:
+          - locationName: SRC
+            nodeName: catalog_privileges
+        join:
+          joinCondition: FROM {{ ref('SRC', 'catalog_privileges') }} `catalog_privileges`
+        name: stg_catalog_privileges
+        noLinkRefs: []
+  name: stg_catalog_privileges
+  overrideSQL: false
+  schema: ""
+  sqlType: Stage
+  type: sql
+  version: 1
+type: Node
